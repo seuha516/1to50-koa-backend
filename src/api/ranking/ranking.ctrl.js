@@ -9,8 +9,7 @@ export const list = async (ctx) => {
   }
 };
 export const update = async (ctx) => {
-  const { name } = ctx.params;
-  const { score, date } = ctx.request.body;
+  const { name, score, date } = ctx.request.body;
   try {
     const data = await Ranking.findByName(name);
     if (data && data.score > score) {
