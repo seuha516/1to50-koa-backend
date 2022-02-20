@@ -36,9 +36,9 @@ app.use(bodyParser());
 app.use(router.routes()).use(router.allowedMethods());
 
 const option = {
-  ca: fs.readFileSync('/etc/letsencrypt/live/seungha-devlog-server.xyz/fullchain.pem'),
-  key: fs.readFileSync('/etc/letsencrypt/live/seungha-devlog-server.xyz/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/seungha-devlog-server.xyz/cert.pem'),
+  ca: fs.readFileSync('../fullchain.pem'),
+  key: fs.readFileSync('../privkey.pem'),
+  cert: fs.readFileSync('../cert.pem'),
 };
 const port = process.env.PORT || 4000;
 https.createServer(option, app.callback()).listen(port, () => {
