@@ -17,6 +17,6 @@
   * 순위 기능
 
 ## Other
-- [1to50_FrontEnd](https://github.com/seuha516/1to50_FrontEnd)
+- [1to50_FrontEnd](https://github.com/seuha516/1to50-react-frontend)
 
 
