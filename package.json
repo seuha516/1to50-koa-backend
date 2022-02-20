@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "1to50-backend",
+  "name": "1to50",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
